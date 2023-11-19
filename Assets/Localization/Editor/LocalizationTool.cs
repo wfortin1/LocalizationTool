@@ -4,12 +4,6 @@ using UnityEngine;
 
 namespace Localization
 {
-    // CLASS RESPONSIBILITY
-    // - Adding key's and giving them a label --> DONE
-    // - Sending that data down to the scriptable objects and adding it to there key dictionary 
-    //   - LanguageSO object's should not be able to edit their keys 
-    // - Adding new Language SO is done from here as well. 
-    // Actual key editing is done on the ScriptableObject.
     public class LocalizationTool : EditorWindow
     {
         [SerializeField] private StringStringDictionary _translationKeys;
